@@ -3,6 +3,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { AbautComponent } from './componentes/abaut/abaut.component';
 import { HeroesComponent } from './componentes/heroes/heroes.component';
 import { HeroeComponent } from './componentes/heroe/heroe.component';
+import { BuscadorComponent } from './componentes/shared/buscador/buscador.component';
 
 export const routes: Routes = [
     {
@@ -21,6 +22,10 @@ export const routes: Routes = [
     {
         path:'heroes/heroe/:id',
         component:HeroeComponent,
+    },
+    {
+        path:'buscar/:termino',
+        component:BuscadorComponent,
     },
     
 
