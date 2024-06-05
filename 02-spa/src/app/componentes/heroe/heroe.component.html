@@ -4,7 +4,7 @@
 <div class="container py-5">
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">{{heroe.nombre | uppercase}} <small>{{heroe.aparicion | date:'y'}}</small></h1><br><br>
+        <h1 class="display-5 fw-bold">{{heroe.nombre | uppercase}} <br> (Primera aparicion <small>{{heroe.aparicion | date:'y'}})</small></h1><br><br>
         
     
 
@@ -17,6 +17,30 @@
     <div class="col-md-8">
         <h3>{{heroe.nombre}}</h3>
         <p>{{heroe.bio}}</p>
+        <p>Aquaman es un superhéroe de cómics publicado por DC Comics. Creado por el escritor Mort Weisinger y el artista Paul Norris,
+             hizo su primera aparición en More Fun Comics #73 en noviembre de 1941. Aquí tienes una descripción detallada del personaje:
+        </p>
+        <br>
+        <h2>Orígenes y Trasfondo</h2>
+        <p> <samp>Nombre Real:</samp> Arthur Curry (también conocido como Orin en su identidad atlante).</p><br><br>
+
+        <ul>
+            <h2>Habilidades y Poderes</h2>
+            <p>Aquaman posee una serie de habilidades sobrehumanas gracias a su ascendencia atlante:</p>
+            <li>Superfuerza: Capaz de levantar y mover objetos extremadamente pesados.</li><br>
+            <li>Velocidad y Agilidad Submarina: Es increíblemente rápido y ágil en el agua.</li><br>
+            <li>Resistencia y Durabilidad: Puede soportar la presión de las profundidades oceánicas y resistir ataques físicos que serían letales para un humano normal.</li><br>
+            <li>Control del Agua: En algunas versiones modernas, tiene la capacidad de manipular el agua.</li><br>
+            <li>Telepatía Acuática: Puede comunicarse telepáticamente con la vida marina y pedirles que lo ayuden.</li>
+        </ul>
+
+        <ul>
+            <h2>Padres:</h2>
+            <li>Padre humano: Thomas Curry, un guardián de faro.</li><br>
+            <li>Madre atlante: Atlanna, una reina atlante.</li><br>
+           
+        </ul>
+
         <div>
             <img *ngIf="heroe.casa == 'Marvel'" class="img-logo" src="marvel.jpg" width="200" height="100" alt="">
             <img *ngIf="heroe.casa== 'DC'" class="img-logo" src="logodc.png" width="200" alt="">
