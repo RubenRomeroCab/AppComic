@@ -5,6 +5,7 @@ import { AbautComponent } from './componentes/abaut/abaut.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { HeroesService } from './servicios/heroes.service';
 import { HeroeComponent } from './componentes/heroe/heroe.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 
@@ -12,7 +13,7 @@ import { HeroeComponent } from './componentes/heroe/heroe.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet ,NavbarComponent,AbautComponent,HomeComponent,HeroeComponent],
+  imports: [RouterOutlet ,NavbarComponent,AbautComponent,HomeComponent,HeroeComponent,FooterComponent],
   providers:[HeroesService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
