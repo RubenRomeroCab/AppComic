@@ -71,6 +71,8 @@ export class HeroesService {
   getHeroe(idx:any){
     return this.heroes[idx]
   }
+  
+  
   buscarHeroe(texto:string){
 
     let heroesArr:Heroe[] = [];
@@ -85,9 +87,6 @@ export class HeroesService {
     return heroesArr;
 
   }
-
-
-    
 }
 
 export interface Heroe{

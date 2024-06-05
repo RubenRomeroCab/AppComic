@@ -18,9 +18,10 @@
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true"  [routerLink]="['/abaut']" routerLinkActive="router-link-active" >About</a>
           </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="text" placeholder="Buscar heroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+        </ul> 
+        <!--Usamos un evento para llamar a la funcion buscarHeroe cuando ocurre el evento y evitar que la pagina se recarge -->
+        <form class="d-flex" role="search" (submit)="buscarHeroe(buscarTexto.value, $event)">
+          <input class="form-control me-2" type="text" placeholder="Buscar héroe" #buscarTexto>
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
