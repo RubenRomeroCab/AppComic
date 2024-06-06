@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ActivatedRoute} from '@angular/router'
-import {HeroesService} from '../../servicios/heroes.service'
+import {Heroe, HeroesService} from '../../servicios/heroes.service'
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroeComponent  {
   
-  heroe:any={};
+  heroe:any=[];
  
   constructor(private activateRoute :ActivatedRoute,
             private _heroesService:HeroesService

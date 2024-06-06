@@ -1,10 +1,9 @@
 .container{
-    margin-top: 5%;
-}
-.button{
-   color: red;
-}
-h1{
     text-align: center;
-    color: rgb(7, 14, 32);
+}
+.texto{
+    text-align: center;
+}
+.carta{
+    margin-bottom: 20%;
 }

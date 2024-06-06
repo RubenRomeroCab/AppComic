@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
     //Usamos un evento para evitar la recarga de la pagina 
     buscarHeroe(texto: string, event: Event): void {
       event.preventDefault();
-      console.log(texto);
+     
       this.router.navigate(['buscar',texto])
     }
 
