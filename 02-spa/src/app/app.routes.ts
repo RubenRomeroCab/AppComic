@@ -20,7 +20,7 @@ export const routes: Routes = [
         component: HeroesComponent,
     },
     {
-        path:'heroes/heroe/:id',
+        path:'heroe/:id',
         component:HeroeComponent,
     },
     {

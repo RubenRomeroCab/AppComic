@@ -1,1 +1,30 @@
-<p>buscador works!</p>
+<div class="bg-light rounded-3 buscador">
+<h1>Buscando: <small>{{ termino }}</small></h1>
+<hr>
+</div>
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el término: {{ termino }}
+    </div>
+
+  </div>
+</div>
+      <!-- *ngFor="let heroe of heroes; let i = index"-->
+    <div class="col" *ngFor="let heroe of heroes; let i = index">
+      <div class="card h-100"  >
+        <img [src] ="heroe.img" class="card-img-top" alt="...">
+        <div class="card-body" >
+          <h5 class="card-title">{{heroe.nombre}}</h5>
+          <p class="card-text">{{heroe.bio}}
+          </p>
+          <!--para que el botton se ajuste como queremos no usamos btn-outline-primary btn-block 
+          si no w-100 = whidth 100%-->
+     </div>
+  </div>
+</div>
+ 
+
+
+
+

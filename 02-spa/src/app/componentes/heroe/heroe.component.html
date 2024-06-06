@@ -1,7 +1,7 @@
 
 
 
-<div class="container py-5">
+<div class="container py-5 " >
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">{{heroe.nombre | uppercase}} <br> (Primera aparicion <small>{{heroe.aparicion | date:'y'}})</small></h1><br><br>
@@ -43,11 +43,16 @@
 
                 <div>
                     <img *ngIf="heroe.casa == 'Marvel'" class="img-logo" src="marvel.jpg" width="200" height="100" alt="">
+                  
                     <img *ngIf="heroe.casa== 'DC'" class="img-logo" src="logodc.png" width="200" alt="">
+                    
                 </div>
+
             </div>
-            <a [routerLink]="['/home']" routerLinkActive="router-link-active" class=" btn btn-outline-danger btn-block" >Regresar</a>
+                <br><br>
+           <a [routerLink]="['/home']" routerLinkActive="router-link-active" class=" btn btn-outline-danger btn-block " >Regresar</a>
         </div>
+       
     </div>
 </div>
 

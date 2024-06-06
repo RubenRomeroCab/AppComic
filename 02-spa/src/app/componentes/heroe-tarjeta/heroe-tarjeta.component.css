@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan en varias líneas */
+    justify-content: center; /* Para centrar las tarjetas horizontalmente */
+    margin-bottom: 10%;
+    
+  }
+  
+  .card {
+    max-width: 50rem; /* Ancho máximo para las tarjetas */
+    margin: 0.5rem; /* Espaciado entre las tarjetas */
+  }
+  .card-body{
+    text-align: center;
+  }

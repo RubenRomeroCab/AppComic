@@ -2,7 +2,10 @@ h1{text-align: center;}
 h3{
     text-align: center;
 }
-
-.cuerpo{
-    margin-top: 15%;
-}
+.btn {
+    display: inline-block;
+    
+    font-size: 14px; /* Tamaño de la fuente del texto */
+    text-align: center; /* Alinea el texto al centro */
+    
+  }
